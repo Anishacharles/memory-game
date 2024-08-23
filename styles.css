@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Times New Roman', Times, serif;
+    
+    box-sizing:border-box;
+   
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     background-color:azure ; 
+     font-size: calc(1em + 1vw); 
+
+
+}
+.container
+{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-image: url("/images/background.jpg");
+   
+    padding:0px 50px;
+    
+}
+
+ h1{
+   font-size: 2.2rem;
+   text-align:center;
+   color:black;
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+    color:crimson;
+} 
+
+.reset-btn{
+    padding:10px 20px;
+    color:crimson;
+    background-color:greenyellow;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:background-color 0.3s ease;
+}
+
+.reset-btn:hover{
+    background-color:bisque;
+}
+
+#gameboard{
+    width:450px;
+    height:435px;
+    display:flex;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 400px;
+
+}
+img{
+
+    max-width:100px;
+    min-width:50px;
+    min-height:100px;
+    cursor:pointer;
+    border-radius: 8px;
+    margin:5px;
+    transition: transform 0.3s ease;
+}
+
+.matched {
+    opacity: 0.5; 
+    pointer-events: none; 
+}
+
+.congragulation-message{
+    color:red;
+    margin:auto;
+    text-align: center;
+    font-size:1.5rem;
+    
+
+}
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: calc(1em + 2vw);
+    }
+}
